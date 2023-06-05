@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Moody Kittens | CodeWorks</title>
+  <link rel="shortcut icon" href="moody-logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="bg-dark d-flex align-items-center p-1 space-between">
+    <img src="moody-logo.png" height="60" alt="Moody Kittens">
+    <form class="" onsubmit="addKitten(event)" required>
+      <div class="d-flex">
+        <input placeholder="Kitten Name" type="text" name="kittenName" />
+        <button class="btn-special" type="submit">
+          /ᐠ｡ꞈ｡ᐟ\
+        </button>
+      </div>
+    </form>
+  </header>
+  <main class="container">
+    <div id="welcome" class="d-flex justify-content-center">
+      <div class="card p-2 text-center w-50">
+        <img src="moody-logo.png" height="250" alt="Moody Kittens">
+        <div class="mt-2">
+          <b class="text-center">Hello Kitless</b>
+          <p>Experience the joy of owning your own moody kitten, Add a kitten above then get started!</p>
+          <small>Good Luck and Have Fun!</small>
+          <br>
+          <button id="getStarted" onclick="getStarted()" class= "hidden" >Get Started</button>
+        </div>
+      </div> 
+    </div>
+    <div id="title" class = "hidden">
+      <button onclick="clearKittens()">Clear Kittens</button>
+    </div>
+    <div id = "kitten-page" class="kitten-page p-2 hidden">
+      <!-- <div id="kittens" class="kitten-card d-flex align-items-center flex-wrap">
+        <h4 id="kittens" class= "kitten-count">1</h4>
+        <img class = kitten src="images/brown-cat-1.jpg" alt="kitten">
+        <h2>kittenName</h2>
+        <div>kitter kitten</div>
+        <div id= "pets">pets: 8 </div>
+        <div id="catnip">catnip: 10</div>
+        <div id="mood">mood: cat</div> -->
+      </div>
+  </main>
+  <footer class="card bg-dark text-light p-2 d-flex align-items-center justify-content-center">
+    <small>Created with <span style="color: var(--primary)">&hearts;</span> by CodeWorks</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
